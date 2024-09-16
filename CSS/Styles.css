@@ -1,0 +1,124 @@
+/* Generelle stiler*/
+
+/*Fjerner default padding og margin fra nettleseren*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(../Bilder/toilet-paper-4974461_1920.jpg);
+    background-size: cover; /* Fikserer bildet i midten av siden*/
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Skygge på navigasjons linjen*/
+}
+
+nav ul{
+    width: 100%; /* Lengden på nav linjen*/
+
+    /*Flexbox shinanigans*/
+    list-style: none; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Høyden på nav linkene. Ikke satt høyde på nav ul og nav fordi jeg vil at nav li skal definere høyden på de*/
+nav li{
+    height: 50px;    
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px; /*Mellomrom på tekstene*/
+    text-decoration: none; /* For å fjerne understreken på linkene*/
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+
+nav a:hover{
+    background-color: lightgray; /*litt feedback på når han har musen over lenkene*/
+}
+
+nav li:first-child{
+    margin-right: auto; /* Flyter den første item i listen til venstre hjørne*/ 
+}
+
+/*Hvis vindu mindre en px holder hero avstand fra kantene på vinduet*/
+@media only screen and (max-width: 800px) {
+    .hero {
+        margin: 20px;
+    }
+    .boxes {
+        margin: 20px;
+    }
+}
+.container{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /*Runder av hjørnene på containeren*/
+    width: 700px;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.hero{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-content h1{
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.hero-content p{
+    margin-top: 10px;
+}
+
+.boxes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes-content{
+    min-height: 300px;
+    width: 700px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+       
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: lightskyblue;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

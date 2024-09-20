@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%; /* Lengden på nav linjen*/
+
+    /*Flexbox shinanigans*/
+    list-style: none; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+/*Høyde på nav bar*/
+nav li{
+    height: 70px;
+}
+
+/*Items inni nav*/
+nav a{
+    text-decoration: none;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+nav img{
+    height: 50px;
+    width: 200px;
+}
+
+nav li:first-child{
+    margin-right:auto;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}

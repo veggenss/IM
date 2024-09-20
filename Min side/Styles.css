@@ -9,7 +9,7 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/toilet-paper-4974461_1920.jpg);
+    background-image: url(../Bilder/wood-3346811_1920.jpg);
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;
@@ -76,7 +76,7 @@ nav li:first-child{
     margin: auto;
 }
 
-.hero{
+.head{
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -84,14 +84,23 @@ nav li:first-child{
 }
 
 
-.hero-content h1{
+.head-content h1{
     font-size: 2rem;
     margin: 0px;
 }
 
-.hero-content p{
+.head-content p{
     margin-top: 10px;
 }
+
+.card{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .boxes{
     margin-top: 40px;
@@ -117,7 +126,7 @@ nav li:first-child{
     height: 100px;
     width: 100px;
     background-color: lightskyblue;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

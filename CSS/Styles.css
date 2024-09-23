@@ -59,7 +59,7 @@ nav li:first-child{
 
 /*Hvis vindu mindre en px holder hero avstand fra kantene på vinduet*/
 @media only screen and (max-width: 800px) {
-    .hero {
+    .head {
         margin: 20px;
     }
     .boxes {
@@ -81,6 +81,7 @@ nav li:first-child{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -107,6 +108,7 @@ nav li:first-child{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .boxes-content{

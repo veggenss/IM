@@ -45,6 +45,7 @@ nav a{
     display: flex;
     align-items: center;
     color: black;
+    font-size: 20px;
 }
 
 
@@ -55,6 +56,7 @@ nav a:hover{
 
 nav li:first-child{
     margin-right: auto; /* Flyter den første item i listen til venstre hjørne*/ 
+    font-size: 80px;
 }
 
 /*Hvis vindu mindre en px holder hero avstand fra kantene på vinduet*/
@@ -62,15 +64,16 @@ nav li:first-child{
     .head {
         margin: 20px;
     }
-    .boxes {
+    .hero-boarder {
         margin: 20px;
     }
 }
+
 .container{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /*Runder av hjørnene på containeren*/
-    width: 700px;
+    border-radius: 10px; /*Runder av hjørnene på containeren*/
+    width: 850px;
     padding: 30px;
     text-align: center;
     margin: auto;
@@ -94,42 +97,56 @@ nav li:first-child{
     margin-top: 10px;
 }
 
-/*.card{
-    margin-top: 30px;
+
+
+
+.hero-container {
+    display: flex;
+    justify-content: center; /* Center both sections horizontally */
+    align-items: flex-start; /* Align them at the top */
+    gap: 20px; /* Add space between the two sections */
+    margin-top: 80px;
+}
+
+
+/* Left */
+/*
+.heroL-boarder {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.card-content
 */
-.boxes{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.boxes-content{
-    min-height: 300px;
-    width: 700px;
+.heroL-content {
+    height: 550px;
+    width: 500px;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-       
+    border-radius: 10px;
 }
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: lightskyblue;
-    font-size: 1rem;
+
+.h2L{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+/* Right */
+/*
+.heroR-boarder {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+*/
+.heroR-content {
+    height: 550px;
+    width: 500px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.h2R{
+    padding: 10px;
+    font-size: 1.4rem;
 }

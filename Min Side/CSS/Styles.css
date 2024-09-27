@@ -56,7 +56,10 @@ nav a:hover{
 
 nav li:first-child{
     margin-right: auto; /* Flyter den første item i listen til venstre hjørne*/ 
-    font-size: 80px;
+}
+
+nav li:first-child img{
+    
 }
 
 /*Hvis vindu mindre en px holder hero avstand fra kantene på vinduet*/
@@ -110,6 +113,7 @@ nav li:first-child{
 
 
 /* Left */
+
 /*
 .heroL-boarder {
     display: flex;
@@ -117,6 +121,7 @@ nav li:first-child{
     align-items: center;
 }
 */
+
 .heroL-content {
     height: 550px;
     width: 500px;
@@ -131,6 +136,7 @@ nav li:first-child{
 }
 
 /* Right */
+
 /*
 .heroR-boarder {
     display: flex;
@@ -138,6 +144,7 @@ nav li:first-child{
     align-items: center;    
 }
 */
+
 .heroR-content {
     height: 550px;
     width: 500px;

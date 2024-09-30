@@ -13,7 +13,7 @@ body{
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 
 }
 
@@ -31,7 +31,6 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav ul li{
@@ -63,14 +62,30 @@ nav li:first-child{
     margin-right: auto; /* Flyter den første item i listen til venstre hjørne*/ 
 }
 
-/*Hvis vindu mindre en px holder hero avstand fra kantene på vinduet*/
-@media only screen and (max-width: 800px) {
-    .head {
-        margin: 20px;
+
+
+
+@media only screen and (max-width: 636px) {
+
+    nav ul {
+        justify-content: space-between;
     }
-    .hero-boarder {
-        margin: 20px;
+    nav a {
+        padding: 0px 5px;
     }
+    
+    nav li:first-child{
+        margin-right: 0px;
+        margin-left: 25px;
+
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    nav ul{
+        flex-wrap: wrap;
+    }
+    
 }
 
 .container{
@@ -80,7 +95,7 @@ nav li:first-child{
     width: 850px;
     padding: 30px;
     text-align: center;
-    margin: auto;
+
 }
 
 .head{
@@ -104,12 +119,15 @@ nav li:first-child{
 
 
 
+/*Generel info og tilfeldig teksting*/
+
 .hero-container {
     display: flex;
     justify-content: center; /* Center both sections horizontally */
     align-items: flex-start; /* Align them at the top */
     gap: 20px; /* Add space between the two sections */
     margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 
@@ -158,6 +176,7 @@ nav li:first-child{
     padding: 10px;
     font-size: 1.4rem;
 }
+
 
 
 /*Dropdown menu*/

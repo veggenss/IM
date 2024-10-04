@@ -1,10 +1,6 @@
-/* Generelle stiler*/
-
-/*Fjerner default padding og margin fra nettleseren*/
 *{
     margin: 0;
     padding: 0;
-
 }
 
 body{
@@ -64,8 +60,6 @@ nav li:first-child{
 
 
 
-
-
 @media only screen and (max-width: 636px) {
 
     nav ul {
@@ -89,111 +83,6 @@ nav li:first-child{
     
 }
 
-.container{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /*Runder av hjørnene på containeren*/
-    width: 850px;
-    padding: 30px;
-    text-align: center;
-
-}
-
-.head{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.head-content h1{
-    font-size: 2rem;
-    margin: 0px;
-}
-
-.head-content p{
-    margin-top: 10px;
-}
-
-
-
-
-/*Generel info og tilfeldig teksting*/
-
-.hero-container {
-    display: flex;
-    justify-content: center; /* Center both sections horizontally */
-    align-items: flex-start; /* Align them at the top */
-    gap: 20px; /* Add space between the two sections */
-    margin-top: 80px;
-    flex-wrap: wrap;
-}
-
-
-/* Left */
-
-/*
-.heroL-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
-.heroL-content {
-    height: 550px;
-    width: 500px;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2L{
-    padding: 10px;
-    font-size: 1.4rem;
-}
-
-.heroL-content .Boxl{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.boxL h2{
-    margin: 10px;
-    min-height: 100px;
-    background-color: lightcoral;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-
-/* Right */
-
-/*
-.heroR-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-*/
-
-.heroR-content {
-    height: 550px;
-    width: 500px;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2R{
-    padding: 10px;
-    font-size: 1.4rem;
-}
-
-
 /*Dropdown menu*/
 
 nav ul li .dropdown{
@@ -204,7 +93,6 @@ nav ul li .dropdown{
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 0;
 }
 
 nav ul li:hover .dropdown{
@@ -221,5 +109,8 @@ nav ul li .dropdown li a{
     text-decoration: none;
 }
 
+
+
+/*Main-Kort*/
 
 

@@ -64,8 +64,6 @@ nav li:first-child{
 
 
 
-
-
 @media only screen and (max-width: 636px) {
 
     nav ul {
@@ -117,85 +115,6 @@ nav li:first-child{
     margin-top: 10px;
 }
 
-
-
-
-/*Generel info og tilfeldig teksting*/
-
-.hero-container {
-    display: flex;
-    justify-content: center; /* Center both sections horizontally */
-    align-items: flex-start; /* Align them at the top */
-    gap: 20px; /* Add space between the two sections */
-    margin-top: 80px;
-    flex-wrap: wrap;
-}
-
-
-/* Left */
-
-/*
-.heroL-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
-.heroL-content {
-    height: 550px;
-    width: 500px;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2L{
-    padding: 10px;
-    font-size: 1.4rem;
-}
-
-.heroL-content .Boxl{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.boxL h2{
-    margin: 10px;
-    min-height: 100px;
-    background-color: lightcoral;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-
-/* Right */
-
-/*
-.heroR-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-*/
-
-.heroR-content {
-    height: 550px;
-    width: 500px;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2R{
-    padding: 10px;
-    font-size: 1.4rem;
-}
-
-
-/*Dropdown menu*/
-
 nav ul li .dropdown{
     display: none;
     position: absolute;
@@ -220,6 +139,3 @@ nav ul li .dropdown li a{
     color: black;
     text-decoration: none;
 }
-
-
-

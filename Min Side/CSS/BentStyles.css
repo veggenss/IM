@@ -19,7 +19,7 @@ body h2{
 }
 
 .container{
-    display: flex;
+    display: flex;  
     justify-content: flex-start;
     width: 100px;
     height: 50px;
@@ -33,7 +33,7 @@ body h2{
     display: flex;
     justify-content:  center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 1.2rem;
 }
 

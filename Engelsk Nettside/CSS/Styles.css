@@ -40,7 +40,7 @@ nav a{
     height: 100%;
     display: flex;
     align-items: center;
-    color: black;
+    color: #333;
 }
 
 nav a:hover{
@@ -49,4 +49,16 @@ nav a:hover{
 
 nav li:first-child{
     margin-right: auto;
+}
+
+
+head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-card{
+    display: flex;
+    justify-content: center;
 }

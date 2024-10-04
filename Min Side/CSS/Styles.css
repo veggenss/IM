@@ -38,6 +38,7 @@ body::before{
 nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Skygge på navigasjons linjen*/
     padding-right: 10px;
+    backdrop-filter: blur(2px);
 }
 
 nav ul{
@@ -73,7 +74,7 @@ nav a{
 
 
 nav a:hover{
-    background-color: rgba(30, 119, 244, 0.3);
+    background-color: rgba(52, 134, 250, 0.479);
     backdrop-filter: blur(4px);
     border-radius: 3px;
 }
@@ -119,7 +120,8 @@ nav li:first-child{
 }
 
 .head{
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-left: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -127,15 +129,19 @@ nav li:first-child{
 }
 
 
-.head-content{
-    color: white;
+.head-content p{
+    font-weight: 550;
+    font-size: 3.4rem;
+    letter-spacing: 1px;
+    color: rgb(0, 236, 240);
 }
 
-.head-content p{
-    font-weight: 500;
-    font-size: 3.4rem;
-    letter-spacing: 2px;
-    color: rgb(0, 236, 240);
+
+.head-content h1{
+    font-weight: 450;
+    font-size: 2.4rem;
+    letter-spacing: 0px;
+    color: rgb(23, 103, 224);
 }
 
 
@@ -150,6 +156,7 @@ nav ul li .dropdown{
     padding: 0;
     margin: 0;
     z-index: 0;
+    backdrop-filter: blur(4px);
 }
 
 nav ul li:hover .dropdown{
@@ -164,14 +171,14 @@ nav ul li .dropdown li{
 nav ul li .dropdown li a{
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(4px);
+
 }
 
 
 footer{
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 12px;
     padding: 10px;
     z-index: 5;
 }

@@ -5,18 +5,17 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/httpspixabay.comillustrationsbackground-pink-blue-gradient.jpg);
+    background-image: url(../Bilder/Gradien\ Abstract\,\ Blue\ Purple.jpg);
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 nav{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Skygge på navigasjons linjen*/
     padding-right: 10px;
+    backdrop-filter: blur(4px);
 }
 
 nav ul{
@@ -35,7 +34,7 @@ nav ul li{
 
 /* Høyden på nav linkene. Ikke satt høyde på nav ul og nav fordi jeg vil at nav li skal definere høyden på de*/
 nav li{
-    height: 50px;    
+    height: 70px;    
 }
 
 nav a{
@@ -44,14 +43,17 @@ nav a{
     text-decoration: none; /* For å fjerne understreken på linkene*/
     display: flex;
     align-items: center;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 
 
 nav a:hover{
-    background-color: lightgray; /*litt feedback på når han har musen over lenkene*/
+    background-color: rgba(52, 134, 250, 0.479);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
 }
 
 nav li:first-child{
@@ -83,16 +85,28 @@ nav li:first-child{
     
 }
 
+@media only screen and (max-width: 920px) {
+
+    .Prosjekt-Top{
+        flex-direction: column;
+    }
+    .Prosjekt-Bottom{
+        flex-direction: column;
+    }
+}
+
 /*Dropdown menu*/
 
 nav ul li .dropdown{
     display: none;
     position: absolute;
-    background-color: white;
+    /*background-color: rgb(41, 41, 41);*/
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     list-style: none;
     padding: 0;
     margin: 0;
+    z-index: 0;
+    backdrop-filter: blur(4px);
 }
 
 nav ul li:hover .dropdown{
@@ -105,12 +119,103 @@ nav ul li .dropdown li{
 }
 
 nav ul li .dropdown li a{
-    color: black;
+    color: white;
     text-decoration: none;
+
+}
+
+
+/*Prosjekt Top*/
+
+.Prosjekt-Top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+.pl{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.pl-content{
+    justify-content: center;
+    align-items: center;
+}
+
+.pm{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 400px;
+    border-radius: 15px
+}
+
+.pm-content{
+    justify-content: center;
+    align-items: center;
+}
+
+.pr{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 400px;
+    border-radius: 15px
+}
+
+.pr-content{
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-/*Main-Kort*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Bakgrunnsbilde Kilde*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 12px;
+    padding: 10px;
+    z-index: 5;
+}
+
+.flatart-link a{
+    color: turquoise;
+}
+footer li{
+    color: white;
+    display: flex;
+    margin-right: auto;
+    text-decoration: underline;
+}

@@ -9,18 +9,18 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/httpspixabay.comillustrationsbackground-pink-blue-gradient.jpg);
+    background-image: url(../Bilder/Abstract_red_Circle_on_black_backgroun_technology-removebg.png), url(../Bilder/Abstract\ Blue\ Circle\ on\ black\ background\ technology.jpg);
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 nav{
-    background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Skygge på navigasjons linjen*/
     padding-right: 10px;
+    backdrop-filter: blur(2px);
 }
 
 nav ul{
@@ -39,7 +39,7 @@ nav ul li{
 
 /* Høyden på nav linkene. Ikke satt høyde på nav ul og nav fordi jeg vil at nav li skal definere høyden på de*/
 nav li{
-    height: 50px;    
+    height: 70px;    
 }
 
 nav a{
@@ -48,14 +48,17 @@ nav a{
     text-decoration: none; /* For å fjerne understreken på linkene*/
     display: flex;
     align-items: center;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 
 
 nav a:hover{
-    background-color: lightgray; /*litt feedback på når han har musen over lenkene*/
+    background-color: rgba(52, 134, 250, 0.479);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
 }
 
 nav li:first-child{
@@ -87,43 +90,16 @@ nav li:first-child{
     
 }
 
-.container{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /*Runder av hjørnene på containeren*/
-    width: 850px;
-    padding: 30px;
-    text-align: center;
-
-}
-
-.head{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.head-content h1{
-    font-size: 2rem;
-    margin: 0px;
-}
-
-.head-content p{
-    margin-top: 10px;
-}
-
 nav ul li .dropdown{
     display: none;
     position: absolute;
-    background-color: white;
+    /*background-color: rgb(41, 41, 41);*/
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     list-style: none;
     padding: 0;
     margin: 0;
     z-index: 0;
+    backdrop-filter: blur(4px);
 }
 
 nav ul li:hover .dropdown{
@@ -136,6 +112,27 @@ nav ul li .dropdown li{
 }
 
 nav ul li .dropdown li a{
-    color: black;
+    color: white;
     text-decoration: none;
+
+}
+
+
+/*Bakgrunnsbilde Kilde*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 12px;
+    padding: 10px;
+    z-index: 5;
+}
+
+.flatart-link a{
+    color: turquoise;
+}
+footer li{
+    color: white;
+    display: flex;
+    margin-right: auto;
+    text-decoration: underline;
 }

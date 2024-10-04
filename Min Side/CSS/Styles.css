@@ -1,5 +1,6 @@
 /* Generelle stiler*/
 
+
 /*Fjerner default padding og margin fra nettleseren*/
 *{
     margin: 0;
@@ -11,8 +12,7 @@ body{
     min-height: 100vh;
     position: relative;
     overflow: hidden /*chatGPT yapp*/;
-    font-family: 'Segoe UI', sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -67,13 +67,15 @@ nav a{
     align-items: center;
     color: white;
     font-size: 25px;
+    letter-spacing: 1px;
 }
 
 
 
 nav a:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(30, 119, 244, 0.3);
     backdrop-filter: blur(4px);
+    border-radius: 3px;
 }
 
 nav li:first-child{
@@ -130,86 +132,10 @@ nav li:first-child{
 }
 
 .head-content p{
-    font-size: 3rem;
+    font-weight: 500;
+    font-size: 3.4rem;
+    letter-spacing: 2px;
     color: rgb(0, 236, 240);
-    margin: 0px;
-}
-
-
-
-
-
-/*Generel info og tilfeldig teksting*/
-
-.hero-container {
-    display: flex;
-    justify-content: center; /* Center both sections horizontally */
-    align-items: flex-start; /* Align them at the top */
-    gap: 20px; /* Add space between the two sections */
-    margin-top: 80px;
-    flex-wrap: wrap;
-}
-
-
-/* Left */
-
-/*
-.heroL-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
-.heroL-content {
-    height: 550px;
-    width: 500px;
-    background-color: rgb(41, 41, 41);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2L{
-    padding: 10px;
-    font-size: 1.4rem;
-}
-
-.heroL-content .Boxl{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.boxL h2{
-    margin: 10px;
-    min-height: 100px;
-    background-color: lightcoral;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-
-/* Right */
-
-/*
-.heroR-boarder {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-*/
-
-.heroR-content {
-    height: 550px;
-    width: 500px;
-    background-color: rgb(41, 41, 41);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-.h2R{
-    padding: 10px;
-    font-size: 1.4rem;
 }
 
 
@@ -238,8 +164,25 @@ nav ul li .dropdown li{
 nav ul li .dropdown li a{
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 
 
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 5;
+}
+
+.flatart-link a{
+    color: turquoise;
+}
+footer li{
+    color: white;
+    display: flex;
+    margin-right: auto;
+    text-decoration: underline;
+}
 

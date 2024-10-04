@@ -163,6 +163,7 @@ nav ul li .dropdown li a{
 .pl-content img{
     display: inline-block;
     min-width: 380px;
+    max-width: 380px;
     max-height: 200px;
     margin: 10px;
     border: 2px solid white;

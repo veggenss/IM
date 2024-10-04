@@ -105,7 +105,7 @@ nav ul li .dropdown{
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 0;
+    z-index: 1;
     backdrop-filter: blur(4px);
 }
 
@@ -131,7 +131,6 @@ nav ul li .dropdown li a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
     margin: 10px;
     margin-top: 40px;
     padding: 20px;
@@ -148,6 +147,7 @@ nav ul li .dropdown li a{
     width: 450px;
     border-radius: 15px;
     backdrop-filter: blur(8px);
+    margin-bottom: 25px;
 
 }
 
@@ -155,9 +155,11 @@ nav ul li .dropdown li a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     margin-top: 10px;
     color: white;
+    z-index: 2;
 }
 
 .pl-content img{
@@ -173,6 +175,10 @@ nav ul li .dropdown li a{
     filter: blur(0px);
 }
 
+.pl-content p{
+    margin-top: 10px;
+}
+
 
 .pm{
     border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -183,7 +189,8 @@ nav ul li .dropdown li a{
  
     height: 500px;
     width: 450px;
-    border-radius: 15px
+    border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 .pm-content{
@@ -204,7 +211,9 @@ nav ul li .dropdown li a{
 
     height: 500px;
     width: 450px;
-    border-radius: 15px
+    border-radius: 15px;
+    margin-bottom: 25px;
+    z-index: -1;
 }
 
 .pr-content{
@@ -217,8 +226,87 @@ nav ul li .dropdown li a{
 }
 
 
+/*Prosjekter Bottom*/
 
 
+.Prosjekt-Bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+.plB{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.09);
+    backdrop-filter: blur(8px);
+ 
+    height: 500px;
+    width: 450px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.plB-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+}
+
+.pmB{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.09);
+    backdrop-filter: blur(8px);
+ 
+    height: 500px;
+    width: 450px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.pmB-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+}
+
+.prB{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.09);
+    backdrop-filter: blur(8px);
+ 
+    height: 500px;
+    width: 450px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.prB-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+}
 
 
 

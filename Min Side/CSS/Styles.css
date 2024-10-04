@@ -9,16 +9,33 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/wood-3346811_1920.jpg);
-    background-size: cover; /* Fikserer bildet i midten av siden*/
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    overflow: hidden /*chatGPT yapp*/;
     font-family: 'Segoe UI', sans-serif;
 
 }
 
+
+
+/*Fliper bare bakgrunsbilde. Også chatGPT yapp så kan være overkomplisert idk*/
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../Bilder/Abstract\ Blue\ Circle\ on\ black\ background\ technology.jpg); /*Kilde: https://www.freepik.com/free-vector/abstract-blue-circle-black-background-technology_34386132.htm#query=website%20dark%20mode%20background&position=0&from_view=keyword&track=ais_hybrid&uuid=46bf645d-b83e-4907-8ead-0799731572dd*/
+    background-size: cover; /* Fikserer bildet i midten av siden*/
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(-1);
+    z-index: -1;
+
+}
+
+
 nav{
-    background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Skygge på navigasjons linjen*/
     padding-right: 10px;
 }
@@ -39,7 +56,7 @@ nav ul li{
 
 /* Høyden på nav linkene. Ikke satt høyde på nav ul og nav fordi jeg vil at nav li skal definere høyden på de*/
 nav li{
-    height: 50px;    
+    height: 70px;    
 }
 
 nav a{
@@ -48,14 +65,15 @@ nav a{
     text-decoration: none; /* For å fjerne understreken på linkene*/
     display: flex;
     align-items: center;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
 }
 
 
 
 nav a:hover{
-    background-color: lightgray; /*litt feedback på når han har musen over lenkene*/
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
 }
 
 nav li:first-child{
@@ -90,7 +108,6 @@ nav li:first-child{
 }
 
 .container{
-    background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /*Runder av hjørnene på containeren*/
     width: 850px;
@@ -100,22 +117,24 @@ nav li:first-child{
 }
 
 .head{
-    margin-top: 40px;
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 
-.head-content h1{
-    font-size: 2rem;
-    margin: 0px;
+.head-content{
+    color: white;
 }
 
 .head-content p{
-    margin-top: 10px;
+    font-size: 3rem;
+    color: rgb(0, 236, 240);
+    margin: 0px;
 }
+
 
 
 
@@ -145,7 +164,7 @@ nav li:first-child{
 .heroL-content {
     height: 550px;
     width: 500px;
-    background-color: white;
+    background-color: rgb(41, 41, 41);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
@@ -183,7 +202,7 @@ nav li:first-child{
 .heroR-content {
     height: 550px;
     width: 500px;
-    background-color: white;
+    background-color: rgb(41, 41, 41);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
@@ -199,7 +218,7 @@ nav li:first-child{
 nav ul li .dropdown{
     display: none;
     position: absolute;
-    background-color: white;
+    /*background-color: rgb(41, 41, 41);*/
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     list-style: none;
     padding: 0;
@@ -217,8 +236,9 @@ nav ul li .dropdown li{
 }
 
 nav ul li .dropdown li a{
-    color: black;
+    color: white;
     text-decoration: none;
+    backdrop-filter: blur(3px);
 }
 
 

@@ -102,11 +102,11 @@ nav li:hover .underline{
 
 .hero-container{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     width: 600px;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 4px 4px 4px solid rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     border-radius: 10px;
@@ -124,15 +124,78 @@ nav li:hover .underline{
     margin: 20px;
 }
 
-#hero-button{
+.button{
     height: 60px;
     width: 250px;
     border-radius: 50px;
     background-color: rgb(52, 196, 112);
     font-size: 1.8rem;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+    border: 2px solid rgb(52, 196, 112) ;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
 }
 
 
+#hero-button{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#hero-button a{
+    position: relative;
+    transition: all .45s ease-out;
+}
+
+#translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -250px;
+    top: -30px;
+    background: rgb(0, 85, 140);
+    position: absolute;
+    transition: all .3s ease-Out;
+  }
+
+  #hero-button:hover #translate {
+    left: 0;
+  }
+  
+  #hero-button:hover a {
+    color: white;
+    z-index: 1;
+  }
+
+
+.hero-bar{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 950px;
+}
+
+.welcome-container{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, rgb(172, 53, 53), rgb(56, 137, 204));
+}  
+
+.welcome-box{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
 footer{
@@ -142,7 +205,6 @@ footer{
     padding: 10px;
     z-index: 5;
 }
-
 .flatart-link a{
     color: turquoise;
 }

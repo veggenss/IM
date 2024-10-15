@@ -125,9 +125,35 @@ nav ul li .dropdown li a{
 }
 
 
+.header-box{
+    background: linear-gradient(to right, rgba(#2c3e50, 0.5), rgba(#CC3355, 0.051)) ;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    margin: 50px;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+
+}
+
+.header-content h1{
+    font-size: 2.3rem;
+}
+
 /*Prosjekt Top*/
 
-.Prosjekt-Top{
+.Prosjekt-Top, .Prosjekt-Bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,6 +162,56 @@ nav ul li .dropdown li a{
     padding: 20px;
 }
 
+.Project-box{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(8px);
+    height: 480px;
+    width: 450px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.Project-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.Project-content img{
+    display: inline-block;  
+    margin: 20px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    transition: filter 0.5s ease;
+    filter: blur(2px); 
+}
+
+
+.Project-content img:hover{
+    filter: blur(0px)
+}
+
+.Project-box.z-index-low{
+    z-index: -1;
+}
+
+/*
+.Prosjekt-Top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 20px;
+}
 
 .pl{
     border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -164,7 +240,8 @@ nav ul li .dropdown li a{
 
 .pl-content img{
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
     border: 2px solid white;
     transition: filter 0.5s ease;
     filter: blur(2px);
@@ -178,7 +255,6 @@ nav ul li .dropdown li a{
 .pl-content p{
     margin-top: 10px;
 }
-
 
 .pm{
     border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -225,10 +301,11 @@ nav ul li .dropdown li a{
     color: white;
 }
 
+*/
 
 /*Prosjekter Bottom*/
 
-
+/*
 .Prosjekt-Bottom{
     display: flex;
     align-items: center;
@@ -237,7 +314,6 @@ nav ul li .dropdown li a{
     margin-top: 40px;
     padding: 20px;
 }
-
 
 .plB{
     border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -308,23 +384,7 @@ nav ul li .dropdown li a{
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 

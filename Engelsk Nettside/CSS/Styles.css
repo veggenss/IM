@@ -54,6 +54,11 @@ nav a{
     color: #333;
 }
 
+nav img{
+    position: relative;
+    
+}
+
 nav a:hover{
     backdrop-filter: blur(2px);
 }
@@ -181,28 +186,5 @@ nav li:hover .underline{
     z-index: 1;
   }
 
-
-.hero-bar{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 1;
-    top: 950px;
-}
-
-.welcome-container{
-    width: 100%;
-    height: 700px;
-    background-image: linear-gradient(to bottom right, rgb(172, 53, 53), rgb(56, 137, 204));
-}  
-
-.welcome-box{
-    width: 500px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 

@@ -224,7 +224,7 @@ nav li:hover .underline{
     color: black;
 }
 
-/*Bent pls fiks*//*
+/*
 @media only screen and (max-width: 500px){
     .row-1, .row-2, .row-3, .row-4{
         flex-wrap: wrap;

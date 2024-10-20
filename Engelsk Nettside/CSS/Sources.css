@@ -94,6 +94,7 @@ nav li:hover .underline{
     margin: 60px;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
 }
 .sources-container{
     display: flex;
@@ -103,5 +104,5 @@ nav li:hover .underline{
 .sources{
     text-decoration: none, underline;
     cursor: pointer;
-    color: aqua;
+    color: black;
 }

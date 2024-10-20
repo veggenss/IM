@@ -82,3 +82,43 @@ nav li .solid-underline{
 nav li:hover .underline{
     transform: scaleX(1);
 }
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.box-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    width: calc(50% - 20px);
+}
+
+.box-content h1 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.box-content p {
+    margin: 0;
+    font-size: 16px;
+}

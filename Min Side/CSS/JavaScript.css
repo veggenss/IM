@@ -5,10 +5,7 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/Gradien\ Abstract\,\ Blue\ Purple.jpg);
-    background-size: cover; /* Fikserer bildet i midten av siden*/
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(to bottom right, rgba(215, 102, 32, 0.8), rgba(250, 206, 49, 0.5));
     font-family: 'Poppins', sans-serif;
 
 }
@@ -126,27 +123,35 @@ nav ul li .dropdown li a{
 }
 
 
-video{
-    margin-top: 100px;
-    width: 100vw;
-    height: 100vh;
-    border: white;
-    justify-items: center;
+
+.JS-Input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 70px;
+
+
 }
 
-.bilde-serie{
+
+.box-frame{
+    width: 370px;
+    height: 500px;
+    border: 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right,  rgba(250, 206, 49, 0.5), rgba(215, 102, 32, 0.8));
+    border-radius: 5px;
+}
+
+.box-ui-content{
+    padding: 10px;
     display: flex;
     justify-content: center;
+}
+.box-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-
 }
 
-.bilde-con{
-    max-width: 90vw;
-    backdrop-filter: blur(2px);
-    background-image: linear-gradient(to bottom, );
-}
-.bilde-con img{
-    max-width: 75vw;
-    max-height: 50%;
-}

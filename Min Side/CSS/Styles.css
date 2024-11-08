@@ -17,7 +17,7 @@ body{
 
 
 
-/*Fliper bare bakgrunsbilde. Også chatGPT yapp så kan være overkomplisert idk*/
+/*Fliper bakgrunsbilde.*/
 body::before{
     content: "";
     position: absolute;

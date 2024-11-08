@@ -147,11 +147,28 @@ nav ul li .dropdown li a{
     padding: 10px;
     display: flex;
     justify-content: center;
+    padding: 3px;
 }
-.box-content{
+.box-li-content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.box-ui-content button{
+    border: none;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 2px;
+}
+.box-ui-content input{
+    border: none;
+    background-color: lightyellow;
+    border-radius: 4px;
+    height: 40px;
+    width: 200px;
+    margin: 2px;
+    padding: 4px;
+    font-size: 1rem;
+}

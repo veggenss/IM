@@ -8,8 +8,15 @@ function addTask(){
     let listItem = document.createElement("li");
     listItem.textContent = task;
 
+
+    if (task === ""){
+        return;
+    }
+
+
     document.getElementById("taskList").appendChild(listItem);
     document.getElementById("taskInput").value = "";
+
 }
 
 function removeTask(){
@@ -21,7 +28,9 @@ function removeTask(){
     for (let i = 0; i < listItems.length; i++){
         if (listItems[i].textContent === task){
             taskList.removeChild(listItems[i]);
+            document.getElementById("taskInput").value = "";
             return
         }
     }
 }
+

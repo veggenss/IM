@@ -6,8 +6,8 @@
     <title>Prosjekter</title>
     <link rel="stylesheet" href="CSS/JavaScript.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <script src="../JavaScript/JSmål_4_11.js" defer></script>
-    <script src="../JavaScript/Løkker.js" defer></script>
+
+    
 
 </head>
 <body>
@@ -29,13 +29,16 @@
     </nav>
 
     <section class="JS-Input">
-
+        <!-- Task Input Box -->
         <div class="box-pos">
             <div class="box-frame">
+                <h1>Task Manager</h1>
                 <div class="box-ui-content">
                     <input type="text" id="taskInput" placeholder="Enter new task">
-                    <button id="addTaskButton">Add Task</button>
-                    <button id="removeTaskButton">Remove Task</button>
+                    <div class="button-container">
+                        <button id="addTaskButton">Add Task</button>
+                        <button id="removeTaskButton">Remove Task</button>
+                    </div>
 
                 </div>
                 <div class="box-li-content">
@@ -43,21 +46,26 @@
                 </div>
             </div>
         </div>
-
+    
+        <!-- Reverse Text Box -->
         <div class="box-pos">
             <div class="box-frame">
-                <div class="box-content">
-    
+                <h1>Reverse any Text!</h1>
+                <div class="box-ui-content">
+                    <input type="text" id="inputRev" placeholder="Type Here">
+                    <button id="revButton">Reverse!</button>
                 </div>
             </div>
         </div>
-
+    
         <div class="box-pos">
             <div class="box-frame">
+                <h1>Another Feature</h1>
                 <div class="box-content">
-    
                 </div>
             </div>
         </div>
-
     </section>
+</body>
+<script src="../JavaScript/Løkker.js" defer></script>
+<script src="../JavaScript/JSmål_4_11.js" defer></script>

@@ -7,13 +7,9 @@ function addTask(){
     let task = document.getElementById("taskInput").value;
     let listItem = document.createElement("li");
     listItem.textContent = task;
-
-
     if (task === ""){
         return;
     }
-
-
     document.getElementById("taskList").appendChild(listItem);
     document.getElementById("taskInput").value = "";
 
@@ -33,4 +29,22 @@ function removeTask(){
         }
     }
 }
+
+
+document.getElementById("revButton").addEventListener("click", reverseInput);
+    
+function reverseInput() {
+    let inputBox = document.getElementById("inputRev");
+    if (!inputBox) {
+        console.error("Input Box Not Found");
+        return;
+    }
+
+    let inputValue = inputBox.value;
+    let reversedText = strFlip(inputValue);
+    
+    inputBox.value = reversedText;
+}
+
+
 

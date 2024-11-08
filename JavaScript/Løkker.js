@@ -1,4 +1,3 @@
-
 /* oppgave 1 */
 
 a = 1
@@ -50,3 +49,11 @@ function ifPalin(str1){
 }
 
 console.log(ifPalin("folof"));
+
+
+/**/
+
+function strFlip(input){
+    
+    return input.split("").reverse().join("");
+}

@@ -1,9 +1,13 @@
 /*Java Script med bent*/
 
+
+
 document.getElementById("addTaskButton").addEventListener("click", addTask);
 document.getElementById("removeTaskButton").addEventListener("click", removeTask);
 
+
 function addTask(){
+
     let task = document.getElementById("taskInput").value;
     let listItem = document.createElement("li");
     listItem.textContent = task;
@@ -14,6 +18,8 @@ function addTask(){
     document.getElementById("taskInput").value = "";
 
 }
+
+
 
 function removeTask(){
 
@@ -31,14 +37,12 @@ function removeTask(){
 }
 
 
+
 document.getElementById("revButton").addEventListener("click", reverseInput);
     
 function reverseInput() {
+
     let inputBox = document.getElementById("inputRev");
-    if (!inputBox) {
-        console.error("Input Box Not Found");
-        return;
-    }
 
     let inputValue = inputBox.value;
     let reversedText = strFlip(inputValue);

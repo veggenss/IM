@@ -49,6 +49,3 @@ function reverseInput() {
     
     inputBox.value = reversedText;
 }
-
-
-

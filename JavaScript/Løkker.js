@@ -181,7 +181,7 @@ function fizBiz(num){
 
 fizBiz(24);
 
-/*Ulike Elementer i To Lister*/
+/*Ulike Elementer i To Lister*
 
 const letLi = ["A", "B", "C", "D", "E"]
 const numLi = [1, 2, 3, 4, 5]
@@ -190,3 +190,28 @@ function findUniqueElements(array, array2){
 
     
 }
+
+/*Telle Antall Forekomster */
+
+
+const li = ["word", "word", "home", "table", "berry", "worker", "encouragment", "home", "worker", "guard", "boat"]
+function countOccurrences(array){
+
+    const liD = {};
+
+    for (i = 0; i < array.length; i++){
+        let word = array[i]
+        if (Object.keys(liD).includes(word)){
+            liD[word] += 1;
+        } else{
+            liD[word] = 1;
+        }
+    }
+    return liD
+
+}
+
+console.log(countOccurrences(li))
+
+
+/**/

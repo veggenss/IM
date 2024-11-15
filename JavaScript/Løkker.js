@@ -61,12 +61,12 @@ if (ifPalin(inputWord) === true){
 
 
 
-
+*/
 function strFlip(input){
     
     return input.split("").reverse().join("");
 }
-
+/*
 const arrayOfItems = ["car", "water", "sun", "desk", "forest", "mouse"]
 
 arrayOfItems.forEach((item) => {

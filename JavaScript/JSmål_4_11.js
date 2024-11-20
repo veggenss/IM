@@ -49,3 +49,30 @@ function reverseInput() {
     
     inputBox.value = reversedText;
 }
+
+
+// SSP kode duh
+
+
+function RPC(value){
+    const choices = ["Rock", "Paper", "Scissors"] //Liste med valgene
+    let bot = Math.floor(Math.random[choices]*3) // Vi lar AIen velge en av de 3 elementene i listen over
+    if (!choices.includes[value]){ //Sjekker at user inputer en rikig value
+        console.log("wtf nigga")
+    }
+
+    // If loopen som beregner hva resultate er. Bruker || operator for å ungå mange if else loops
+    if (value === bot){
+        console.log("You suck");
+    } else if (
+        //Sjekker alle mulige kombinasjoner for å se om man vinner eller taper
+        (value === "Rock" && bot === "Rock") ||
+        (value === "Paper" && bot === "Rock") ||
+        (value === "Scissors" && bot === "Paper")
+    ) {
+        console.log("You Won")
+    } else {
+        console.log("You suck even harder")
+    }
+
+}

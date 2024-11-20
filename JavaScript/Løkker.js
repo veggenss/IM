@@ -61,7 +61,7 @@ if (ifPalin(inputWord) === true){
 
 
 
-*/
+*/  
 function strFlip(input){
     
     return input.split("").reverse().join("");

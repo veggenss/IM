@@ -13,81 +13,11 @@ body{
 
 }
 
-nav{
-    padding-right: 10px;
-    backdrop-filter: blur(4px);
-
-}
-
-nav ul{
-    width: 100%; /* Lengden på nav linjen*/
-    position: relative;
-    /*Flexbox shinanigans*/
-    list-style: none; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav ul li{
-    position: relative;
-}
-
-/* Høyden på nav linkene. Ikke satt høyde på nav ul og nav fordi jeg vil at nav li skal definere høyden på de*/
-nav li{
-    height: 70px;    
-}
-
-nav a{
-    height: 100%;
-    padding: 0 30px; /*Mellomrom på tekstene*/
-    text-decoration: none; /* For å fjerne understreken på linkene*/
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 25px;
-    letter-spacing: 1px;
-}
 
 
-
-nav a:hover{
-    background-color: rgba(52, 134, 250, 0.479);
-    backdrop-filter: blur(4px);
-    border-radius: 3px;
-}
-
-nav li:first-child{
-    margin-right: auto; /* Flyter den første item i listen til venstre hjørne*/ 
-}
-
-
-/*
-@media only screen and (max-width: 636px) {
-
-    nav ul {
-        justify-content: space-between;
-    }
-    nav a {
-        padding: 0px 5px;
-    }
-    
-    nav li:first-child{
-        margin-right: 0px;
-        margin-left: 25px;
-
-    }
-}
-
-@media only screen and (max-width: 387px) {
-    nav ul{
-        flex-wrap: wrap;
-    }
-    
-}
-*/
+/*Makes the boxes stack verticaly when the tab is reduced to a certant size*/
 @media only screen and (max-width: 920px) {
-
+    
     .Prosjekt-Top{
         flex-direction: column;
     }
@@ -96,40 +26,11 @@ nav li:first-child{
     }
 }
 
-/*Dropdown menu*/
-
-nav ul li .dropdown{
-    display: none;
-    position: absolute;
-    /*background-color: rgb(41, 41, 41);*/
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 2;
-    backdrop-filter: blur(4px);
-}
-
-nav ul li:hover .dropdown{
-    display: block;
-}
-
-nav ul li .dropdown li{
-    padding: 3px 3px;
-    white-space: nowrap;
-}
-
-nav ul li .dropdown li a{
-    color: white;
-    text-decoration: none;
-
-}
-
 
 .header{
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin-top: 200px;
 }
 
 .header-box{
@@ -142,24 +43,20 @@ nav ul li .dropdown li a{
     position: relative;
     display: flex;
     width: 700px;
-    height: 200px;
+    height: 100px;
 
 }
 
 .header-content{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
 }
 
-.header-content h1{
-    margin-bottom: 10px;
-    font-size: 2.3rem;
-}
 
 /*Prosjekt Top*/
 

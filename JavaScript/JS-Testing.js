@@ -1,13 +1,19 @@
-/*Used for testing snippets of JS code sinde the Løkker.js keeps running into issues*/
+const inputWord = "Palin";
 
-function printMultiplicationTable() {
-  for (let i = 1; i <= 10; i++) {
-    let row = '';
-    for (let j = 1; j <= 10; j++) {
-      row += `${i} * ${j} = ${i * j}\t`;
-    }
-    console.log(row);
-  }
+function ifPalin(str1){
+    for (let i = 0; i < str1.length; i++){
+        let lastIndex = str1.length - 1 - i;
+        if(str1[i] != str1[lastIndex]){
+            return false;
+        }
+    } 
+    return true;
+    
+    
 }
 
-printMultiplicationTable();
+if (ifPalin(inputWord) === true){
+    console.log(inputWord, "is true")
+} else {
+    console.log(inputWord, "is false")
+} 

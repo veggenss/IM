@@ -9,13 +9,18 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/Abstract_red_Circle_on_black_backgroun_technology-removebg.png), url(../Bilder/Abstract\ Blue\ Circle\ on\ black\ background\ technology.jpg);
+    background-image: linear-gradient(to bottom right, rgb(45, 0, 135), rgb(45, 0, 63));
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Poppins', sans-serif;
-
+    color: white;
 }
+
+html{
+    font-family: Poppins, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    scroll-behavior: smooth;
+  }
 
 
 /*Bakgrunnsbilde Kilde*/
@@ -37,16 +42,43 @@ footer li{
     text-decoration: underline;
 }
 
-.info{
+.about{
     display: flex;
-    justify-content: center;
+    height: auto;
+    width: 90vw;
+    flex-direction: column;
+    margin: 40px auto;
     align-items: center;
-    border: 2px solid white;
-    height: 1000px;
-    width: 1000px;
-    margin: auto;
 }
 
-.info-container{
+
+.about-con{
     display: flex;
+    width: 1200px;
+    height: 400px;
+    border: 1px solid #eee;
+    margin: 20px;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.about-con img{
+    
+    margin-left: auto; /* Pushes the image to the right */
+    max-width: 600px; /* Ensures the image doesn’t overflow */
+    height: auto; /* Maintains aspect ratio */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+.about-text{
+    margin: 20px auto auto 20px; 
+    font-size: 1.6rem;
+    max-width: 600px;
+}
+
+.about-text img{
+    margin: 20px;
 }

@@ -1,3 +1,7 @@
+function strFlip(input){
+    
+    return input.split("").reverse().join("");
+}
 /*
 a = 1
 b = 2
@@ -10,6 +14,7 @@ function numSwap(n1, n2) {
 }
 
 numSwap(1, 2);
+
 
 
 
@@ -33,6 +38,9 @@ function tallG(n1, n2, n3){
 }
 
 console.log(tallG(5, 6, 2));
+
+
+
 
 
 
@@ -61,11 +69,8 @@ if (ifPalin(inputWord) === true){
 
 
 
-*/  
-function strFlip(input){
-    
-    return input.split("").reverse().join("");
-}
+*/
+
 /*
 const arrayOfItems = ["car", "water", "sun", "desk", "forest", "mouse"]
 
@@ -164,23 +169,14 @@ console.log(longestWord(wordList));
 
 
 
-/*Fizz Buzz*
 
-
-
-function fizBiz(num){
-
-    if (num % 5 === 0){
-        console.log("Fizz");
-    } else if (num % 3 === 0){
-        console.log("Buzz");
-    } else for(i = num; i > 0; i--){
-        console.log(i)
-    }
-}
-
-fizBiz(24);
-
+// Example usage:
+console.log(calculator(5, 3, '+')); // Output: 8
+console.log(calculator(5, 3, '-')); // Output: 2
+console.log(calculator(5, 3, '*')); // Output: 15
+console.log(calculator(5, 3, '/')); // Output: 1.6666666666666667
+console.log(calculator(5, 0, '/')); // Output: Error: Division by zero
+console.log(calculator(5, 3, '%')); // Output: Error: Invalid operator
 /*Ulike Elementer i To Lister*
 
 const letLi = ["A", "B", "C", "D", "E"]
@@ -191,7 +187,7 @@ function findUniqueElements(array, array2){
     
 }
 
-/*Telle Antall Forekomster */
+/*Telle Antall Forekomster *
 
 
 const li = ["word", "word", "home", "table", "berry", "worker", "encouragment", "home", "worker", "guard", "boat"]
@@ -214,4 +210,76 @@ function countOccurrences(array){
 console.log(countOccurrences(li))
 
 
-/**/
+
+/*Fizz Buzz
+
+
+
+function fizBiz(num){
+
+    if (num % 5 === 0){
+        console.log("Fizz");
+    } else if (num % 3 === 0){
+        console.log("Buzz");
+        } else if (num % 3 === 0 && num % 5 === 0){
+        console.log("FizzBuzz");
+    } else for(i = num; i > 0; i--){
+        console.log(i)
+    }
+}
+
+fizBiz(33);
+
+*/
+
+//calculator
+/*
+function calculator(num1, num2, operator) {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    case '/':
+      if (num2 === 0) {
+        console.log("Error: Division by zero");
+        return;
+      }
+      return num1 / num2;
+    default:
+      console.log("Error: Invalid operator");
+      return;
+  }
+}
+
+console.log(calculator(3, 3, '/'));
+*/
+/*
+function gangetabell(num){
+    for(i = 1; i <= 10; i++){
+        console.log(num * i)
+}
+
+gangetabell(5)
+*/
+
+
+//Den lille gangetabellen
+/*
+function printMultiplicationTable() {
+    for (let i = 1; i <= 10; i++) {
+      let row = '';
+  
+      for (let j = 1; j <= 10; j++) {
+        row += `${i} * ${j} = ${i * j}\t`;
+      }
+  
+  
+      console.log(row);
+    }
+  }
+  
+  printMultiplicationTable();
+  */

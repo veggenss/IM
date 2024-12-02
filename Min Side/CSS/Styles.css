@@ -11,7 +11,7 @@
 body{
     min-height: 100vh;
     position: relative;
-    overflow: hidden /*chatGPT yapp*/;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -109,6 +109,65 @@ footer{
 
 .flatart-link a{
     color: turquoise;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 12px;
+    padding: 10px;
+    z-index: 5;
+}
+
+.flatart-link a{
+    color: turquoise;
+}
+
+footer li{
+    color: white;
+    display: flex;
+    margin-right: auto;
+    text-decoration: underline;
+}
+
+/* Add media queries for smaller aspect ratios */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .head {
+        margin-top: 60px;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head-content p {
+        font-size: 2.5rem;
+    }
+
+    .head-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head-content p {
+        font-size: 2rem;
+    }
+
+    .head-content h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        left: 5px;
+        padding: 5px;
+    }
 }
 footer li{
     color: white;

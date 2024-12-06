@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Meg</title>
+    <title>Logg</title>
     <link rel="stylesheet" href="CSS/nav-bar.css">
     <link rel="stylesheet" href="CSS/log.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
 </head>
 <body><!--Nav Bar-->
     <nav>
@@ -30,28 +31,35 @@
         </ul>
     </nav>
 
-
-    <section class="logs">
-
-        <div class="con">
-            <div class="con-content">
-
-            </div>
+    <!-- Search Bar -->
+    <header class="search-bar">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Søk etter dato eller tittel...">
+            <img src="Bilder/Blue-search-icon.png" alt="Søk ikon" id= "search-icon"class="search-icon">
         </div>
-            
-        <div class="con">
-            <div class="con-content">
+    </header>
 
-            </div>
-        </div>
-        
-        <div class="con">
-            <div class="con-content">
+    <!-- Log Section -->
+    <section class="logs" id="logSection">
 
-            </div>
+        <div class="log">
+            <h3>Ingen</h3>
+            <p>Logginnhold her...</p>
         </div>
-        
+
+        <div class="log">
+            <h3>Igår</h3>
+            <p>Logginnhold her...</p>
+        </div>
+
+        <div class="log">
+            <h3>06 / 12 / 24</h3>
+            <p>Logginnhold her...</p>
+        </div>
+
     </section>
+
+<script scr="JS/log.js" defer></script>
 
 </body>
 </html>

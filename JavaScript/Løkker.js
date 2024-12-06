@@ -169,16 +169,6 @@ console.log(longestWord(wordList));
 
 
 
-
-// Example usage:
-console.log(calculator(5, 3, '+')); // Output: 8
-console.log(calculator(5, 3, '-')); // Output: 2
-console.log(calculator(5, 3, '*')); // Output: 15
-console.log(calculator(5, 3, '/')); // Output: 1.6666666666666667
-console.log(calculator(5, 0, '/')); // Output: Error: Division by zero
-console.log(calculator(5, 3, '%')); // Output: Error: Invalid operator
-/*Ulike Elementer i To Lister*
-
 const letLi = ["A", "B", "C", "D", "E"]
 const numLi = [1, 2, 3, 4, 5]
 
@@ -271,12 +261,9 @@ gangetabell(5)
 function printMultiplicationTable() {
     for (let i = 1; i <= 10; i++) {
       let row = '';
-  
       for (let j = 1; j <= 10; j++) {
         row += `${i} * ${j} = ${i * j}\t`;
       }
-  
-  
       console.log(row);
     }
   }

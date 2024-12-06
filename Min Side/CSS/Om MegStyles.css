@@ -9,7 +9,7 @@
 
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, rgb(45, 0, 135), rgb(45, 0, 63));
+    background-image: url(../Bilder/Gradien\ Abstract\,\ Blue\ Purple.jpg);
     background-size: cover; /* Fikserer bildet i midten av siden*/
     background-repeat: no-repeat;
     background-position: center;

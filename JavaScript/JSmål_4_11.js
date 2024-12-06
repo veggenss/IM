@@ -1,7 +1,7 @@
 /*Java Script med bent*/
 
 
-
+//JS underside - Task list
 document.getElementById("addTaskButton").addEventListener("click", addTask);
 document.getElementById("removeTaskButton").addEventListener("click", removeTask);
 
@@ -37,7 +37,7 @@ function removeTask(){
 }
 
 
-
+//JS underside - Reverse input
 document.getElementById("revButton").addEventListener("click", reverseInput);
     
 function reverseInput() {
@@ -51,7 +51,7 @@ function reverseInput() {
 }
 
 
-// SSP kode duh
+// JS underside (IKKE LAGT TIL ENDÅ) - RPS kode duh
 
 
 function RPC(value){
@@ -76,3 +76,8 @@ function RPC(value){
     }
 
 }
+
+
+
+
+

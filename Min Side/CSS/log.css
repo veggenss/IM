@@ -1,14 +1,82 @@
-*{
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
-    position: relative;
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     background-color: #1e232a;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Search Bar */
+/* Search Bar */
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* Sentrerer søkefelt og ikon vertikalt */
+    justify-content: center; /* Sentrerer hele containeren horisontalt */
+    gap: 10px; /* Mellomrom mellom søkefeltet og ikonet */
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 600px; /* Begrens bredden til søkefeltet */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container img.search-icon {
+    width: 50px; /* Sett ikonets bredde */
+    height: 50px; /* Sett ikonets høyde */
+    object-fit: contain; /* Sørg for at bildet ikke strekkes */
+    cursor: pointer; /* Gir ikonet en "pekehånd" for interaktivitet */
 }
 
 
+/* Logs Section */
+.logs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.log {
+    background-color: #2e343b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.log h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.log p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .log {
+        width: 100%;
+    }
+}

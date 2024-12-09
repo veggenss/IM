@@ -35,26 +35,43 @@
     <!-- Search Bar -->
     <header class="search-bar">
         <div class="search-container">
-            <input type="text" id="search" placeholder="Skriv i Søkefelte...">
+            <input type="text" id="search" placeholder="Skriv i Søkefelte..."> 
+            <div class="dropdown-filter">
+                <select  id="filterSelect">
+                    <option value="all">Alle</option>
+                    <option value="January">Januar</option>
+                    <option value="Febuary">Februar</option>
+                    <option value="March">Mars</option>
+                    <option value="April">April</option>
+                    <option value="May">Mai</option>
+                    <option value="June">Juni</option>
+                    <option value="July">Juli</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="December">Desember</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <!-- Log Section -->
     <section class="logs" id="logSection">
 
-        <div class="log">
+        <div class="log" id="december">
             <h3>Ingen</h3>
             <p>Logginnhold her...</p>
         </div>
 
-        <div class="log">
+        <div class="log", id="december">
             <h3>Igår</h3>
             <p>Logginnhold her...</p>
         </div>
 
-        <div class="log" class="december">
+        <div class="log" id="december" id="Friday">
             
-            <h3>06.12.24</h3>
+            <h3>Fredag 06.12.24</h3>
             <p>Er ganske seint ute men fikk endelig lagd logg. Endret bakgrunn på "Om" Siden til å være den samme som på "Prosjekter". Lagde disse log konteinerene og et søkefelt som faktisk funker og er live. Det funket ikke helt til å begynne med fordi JS filen bare ble ikke tilkoblet riktig men jeg flytet script scr="" fra bunnen av body til head og da fungerte det.</p>
         </div>
 

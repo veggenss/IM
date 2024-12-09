@@ -1,6 +1,5 @@
 //Logg underside - Søke funksjon
 document.getElementById('search').addEventListener('input', filterLogs);
-document.getElementById('search-icon').addEventListener('click', filterLogs);
 
 // Listen for ENTER key press for responsive search
 document.getElementById('search').addEventListener('keydown', (event) => {

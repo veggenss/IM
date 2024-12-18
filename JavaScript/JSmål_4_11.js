@@ -41,15 +41,12 @@ function removeTask(){
 document.getElementById("revButton").addEventListener("click", reverseInput);
     
 function reverseInput() {
-
     let inputBox = document.getElementById("inputRev");
-
     let inputValue = inputBox.value;
-    let reversedText = strFlip(inputValue);
+    let reversedText = inputValue.split('').reverse().join('');
     
     inputBox.value = reversedText;
 }
-
 
 // JS underside (IKKE LAGT TIL ENDÅ) - RPS kode duh
 

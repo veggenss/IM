@@ -12,7 +12,7 @@ body {
     color: #ffffff;
 }
 
-/* Search Bar */
+
 /* Search Bar */
 .search-bar {
     margin: 20px 0;
@@ -50,6 +50,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin: 30px;
 }
 
 .log {

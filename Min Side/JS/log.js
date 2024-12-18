@@ -27,7 +27,8 @@ function filterByMonth() {
 function filterLogs() {
     const searchInput = document.getElementById('search').value.toLowerCase();
     const logs = document.querySelectorAll('.log');
-
+    
+    //Searches through all the logs and checks if the search input matches the title or content of the log
     logs.forEach(log => {
         const titleElement = log.querySelector('h3', "h6");
         const title = titleElement.textContent.toLowerCase();

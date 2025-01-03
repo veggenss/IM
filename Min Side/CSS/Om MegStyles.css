@@ -9,11 +9,12 @@
 
 body{
     min-height: 100vh;
-    background-image: url(../Bilder/Gradien\ Abstract\,\ Blue\ Purple.jpg);
-    background-size: cover; /* Fikserer bildet i midten av siden*/
+    background: linear-gradient(135deg, #1e232a 0%, #1e232a 40%, #1e2838 70%, #1e2d4a 100%);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
+    line-height: 1.6;
 }
 
 html{
@@ -54,31 +55,41 @@ footer li{
 
 .about-con{
     display: flex;
-    width: 1200px;
-    height: 400px;
-    border: 1px solid #eee;
-    margin: 20px;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin: 20px auto;
+    background-color: #2e343b;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+
 .about-con img{
-    
-    margin-left: auto; /* Pushes the image to the right */
-    max-width: 600px; /* Ensures the image doesn’t overflow */
-    height: auto; /* Maintains aspect ratio */
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-   
+    margin: 20px;
+    max-width: 45%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .about-text{
-    margin: 20px auto auto 20px; 
-    font-size: 1.6rem;
-    max-width: 600px;
+    margin: 30px;
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    max-width: 50%;
+    line-height: 1.8;
 }
 
-.about-text img{
-    margin: 20px;
+/* Add responsive design */
+@media (max-width: 768px) {
+    .about-con {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .about-con img, .about-text {
+        max-width: 90%;
+        margin: 20px auto;
+    }
 }

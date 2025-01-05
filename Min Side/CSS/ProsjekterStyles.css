@@ -1,23 +1,22 @@
+/* Reset default browser styles */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Main body styling with background image */
 body{
     min-height: 100vh;
     background-image: url(../Bilder/Gradien\ Abstract\,\ Blue\ Purple.jpg);
-    background-size: cover; /* Fikserer bildet i midten av siden*/
+    background-size: cover; /* Centers and scales image to cover viewport */
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Poppins', sans-serif;
-
 }
 
-
-
-/*Makes the boxes stack verticaly when the tab is reduced to a certant size*/
+/* Responsive design for mobile devices */
 @media only screen and (max-width: 920px) {
-    
+    /* Stack project boxes vertically on smaller screens */
     .Prosjekt-Top{
         flex-direction: column;
     }
@@ -26,13 +25,14 @@ body{
     }
 }
 
-
+/* Header section styling */
 .header{
     display: flex;
     justify-content: center;
     margin-top: 200px;
 }
 
+/* Glassmorphism effect for header box */
 .header-box{
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
@@ -44,9 +44,9 @@ body{
     display: flex;
     width: 700px;
     height: 100px;
-
 }
 
+/* Header content alignment and styling */
 .header-content{
     display: flex;
     align-items: center;
@@ -54,12 +54,9 @@ body{
     margin: 10px;
     color: white;
     font-size: 1.5rem;
-
 }
 
-
-/*Prosjekt Top*/
-
+/* Project section layout containers */
 .Prosjekt-Top, .Prosjekt-Bottom{
     display: flex;
     align-items: center;
@@ -69,6 +66,7 @@ body{
     padding: 20px;
 }
 
+/* Individual project box styling with glassmorphism effect */
 .Project-box{
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     border-left: 2px solid rgba(255, 255, 255, 0.3);
@@ -82,6 +80,7 @@ body{
     gap: 10px;
 }
 
+/* Project content container styling */
 .Project-content{
     display: flex;
     justify-content: center;
@@ -92,41 +91,42 @@ body{
     color: white;
 }
 
-
+/* Project image styling with blur effect */
 .Project-content img{
     display: inline-block;  
     margin: 20px;
     margin-bottom: 10px;
     border: 2px solid white;
     border-radius: 1px;
-    transition: filter 0.5s ease;
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
     filter: blur(2px); 
-
 }
 
-
+/* Remove blur effect on hover */
 .Project-content img:hover{
     filter: blur(0px);
 }
 
+/* Utility class for z-index positioning */
 .Project-box.z-index-low{
     z-index: -1;
 }
 
-/*Bakgrunnsbilde Kilde*/
+/* Footer positioning and styling */
 footer{
     position: fixed;
     bottom: 0;
     left: 12px;
     padding: 10px;
-    z-index: 5;
+    z-index: 5; /* Ensures footer stays above other content */
 }
 
+/* Footer link styling */
 .flatart-link a{
     color: turquoise;
-    
 }
 
+/* Footer list item styling */
 footer li{
     color: white;
     display: flex;

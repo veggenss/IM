@@ -1,34 +1,36 @@
-/* Reset styles */
+/* Global reset to ensure consistent styling across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Main body styling with gradient background */
 body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e232a 0%, #1e232a 40%, #1e2838 70%, #1e2d4a 100%);
+    background: linear-gradient(135deg, rgb(30, 35, 42) 0%, rgb(30, 35, 42) 40%, rgb(30, 40, 56) 70%, hwb(220 12% 71%) 100%);
     color: #ffffff;
 }
 
-
-/* Search Bar */
+/* Search functionality styling */
 .search-bar {
-    margin: 20px 0;
+    margin: 20px 40px 0px 40px;
     text-align: center;
 }
 
+/* Container for search input and filter dropdown */
 .search-container {
     display: flex;
-    align-items: center; /* Sentrerer søkefelt og ikon vertikalt */
-    justify-content: center; /* Sentrerer hele containeren horisontalt */
-    gap: 10px; /* Mellomrom mellom søkefeltet og ikonet */
+    align-items: center; /* Vertically centers search field and icon */
+    justify-content: center; /* Horizontally centers the container */
+    gap: 10px; /* Space between search field and icon */
 }
 
+/* Search input field styling */
 .search-container input {
     width: 100%;
-    max-width: 675px; /* Begrens bredden til søkefeltet */
+    max-width: 675px; /* Limits search field width for better UX */
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -36,15 +38,29 @@ body {
     outline: none;
 }
 
-.search-container img.search-icon {
-    width: 50px; /* Sett ikonets bredde */
-    height: 50px; /* Sett ikonets høyde */
-    object-fit: contain; /* Sørg for at bildet ikke strekkes */
-    cursor: pointer; /* Gir ikonet en "pekehånd" for interaktivitet */
+/* Dropdown filter component */
+.dropdown-filter {
+    position: relative;
+    display: inline-block;
+    z-index: -1; /* Positions behind other elements */
 }
 
+/* Dropdown select element styling */
+.dropdown-filter select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 40px;
+    font-size: 1.1rem;
+}
 
-/* Logs Section */
+/* Hover effect for dropdown options */
+.dropdown-filter:hover select option {
+    background-color: #f1f1f1;
+}
+
+/* Log entries container layout */
 .logs {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +69,7 @@ body {
     margin: 40px;
 }
 
+/* Individual log entry card styling */
 .log {
     background-color: #2e343b;
     padding: 30px;
@@ -64,43 +81,29 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Subtitle styling within log entries */
 .log h6 {
-    margin-top: -15px;  /* Pulls h6 closer to h3 */
-    margin-bottom: 15px;  /* Adds space between h6 and paragraph */
-    color: rgba(255, 255, 255, 0.6);
+    margin-top: -15px;  /* Reduces space between title and subtitle */
+    margin-bottom: 15px;  /* Adds space between subtitle and content */
+    color: rgba(255, 255, 255, 0.6); /* Subtle text color for hierarchy */
 }
 
+/* Log entry title styling */
 .log h3 {
     font-size: 1.8rem;
     margin-bottom: 12px;
 }
 
+/* Log entry content styling */
 .log p {
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Responsive Design */
+/* Responsive design for smaller screens */
 @media (max-width: 1300px) {
     .log {
-        width: 95%;
+        width: 95%; /* Makes logs responsive on smaller screens */
     }
 }
 
-.dropdown-filter {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-filter select {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    height: 40px;
-    font-size: 1.1rem;
-}
-
-.dropdown-filter:hover select option {
-    background-color: #f1f1f1;
-}

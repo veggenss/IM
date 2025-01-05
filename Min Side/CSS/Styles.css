@@ -1,23 +1,20 @@
-/* Generelle stiler*/
+/* General styles for the entire website */
 
-
-/*Fjerner default padding og margin fra nettleseren*/
+/* Reset default browser styles */
 *{
     margin: 0;
     padding: 0;
-
 }
 
+/* Base body styling with full viewport height */
 body{
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Prevents scrolling */
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-/*Fliper bakgrunsbilde.*/
+/* Background image setup with flip effect */
 body::before{
     content: "";
     position: absolute;
@@ -25,24 +22,25 @@ body::before{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../Bilder/Abstract\ Blue\ Circle\ on\ black\ background\ technology.jpg); /*Kilde: https://www.freepik.com/free-vector/abstract-blue-circle-black-background-technology_34386132.htm#query=website%20dark%20mode%20background&position=0&from_view=keyword&track=ais_hybrid&uuid=46bf645d-b83e-4907-8ead-0799731572dd*/
-    background-size: cover; /* Fikserer bildet i midten av siden*/
+    /* Background image with source attribution */
+    background-image: url(../Bilder/Abstract\ Blue\ Circle\ on\ black\ background\ technology.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transform: scale(-1);
-    z-index: -1;
-
+    transform: scale(-1); /* Flips the image horizontally */
+    z-index: -1; /* Places background behind all content */
 }
 
+/* Main content container */
 .container{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /*Runder av hjørnene på containeren*/
+    border-radius: 10px;
     width: 850px;
     padding: 30px;
     text-align: center;
-
 }
 
+/* Header section layout */
 .head{
     margin-top: 90px;
     margin-left: 20px;
@@ -52,53 +50,52 @@ body::before{
     flex-direction: column;
 }
 
-
+/* Main text styling in header */
 .head-content p{
     font-weight: 550;
     font-size: 3.4rem;
     letter-spacing: 1px;
-    color: rgb(0, 236, 240);
+    color: rgb(0, 236, 240); /* Bright cyan color */
 }
 
-
+/* Secondary heading styling */
 .head-content h1{
     font-weight: 450;
     font-size: 2.4rem;
     letter-spacing: 0px;
-    color: rgb(23, 103, 224);
+    color: rgb(23, 103, 224); /* Blue color */
 }
 
-
-/*Dropdown menu*/
-
+/* Dropdown menu styling */
 nav ul li .dropdown{
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    /*background-color: rgb(41, 41, 41);*/
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     list-style: none;
     padding: 0;
     margin: 0;
     z-index: 0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px); /* Glassmorphism effect */
 }
 
+/* Show dropdown on hover */
 nav ul li:hover .dropdown{
     display: block;
 }
 
+/* Dropdown list items */
 nav ul li .dropdown li{
     padding: 3px 3px;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
+/* Dropdown links */
 nav ul li .dropdown li a{
     color: white;
     text-decoration: none;
-
 }
 
-
+/* Footer positioning */
 footer{
     position: fixed;
     bottom: 0;
@@ -107,23 +104,12 @@ footer{
     z-index: 5;
 }
 
+/* Footer link color */
 .flatart-link a{
     color: turquoise;
 }
 
-
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 12px;
-    padding: 10px;
-    z-index: 5;
-}
-
-.flatart-link a{
-    color: turquoise;
-}
-
+/* Footer list items */
 footer li{
     color: white;
     display: flex;
@@ -131,14 +117,16 @@ footer li{
     text-decoration: underline;
 }
 
-/* Add media queries for smaller aspect ratios */
+/* Tablet responsiveness */
 @media screen and (max-width: 768px) {
+    /* Adjust container for tablet screens */
     .container {
         width: 90%;
         margin: 0 auto;
         padding: 20px;
     }
 
+    /* Center header content */
     .head {
         margin-top: 60px;
         margin-left: 0;
@@ -146,6 +134,7 @@ footer li{
         text-align: center;
     }
 
+    /* Adjust font sizes for tablets */
     .head-content p {
         font-size: 2.5rem;
     }
@@ -155,7 +144,9 @@ footer li{
     }
 }
 
+/* Mobile responsiveness */
 @media screen and (max-width: 480px) {
+    /* Smaller font sizes for mobile */
     .head-content p {
         font-size: 2rem;
     }
@@ -164,15 +155,10 @@ footer li{
         font-size: 1.5rem;
     }
 
+    /* Adjust footer for mobile */
     footer {
         left: 5px;
         padding: 5px;
     }
-}
-footer li{
-    color: white;
-    display: flex;
-    margin-right: auto;
-    text-decoration: underline;
 }
 

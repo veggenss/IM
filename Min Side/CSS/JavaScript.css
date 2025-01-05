@@ -1,23 +1,26 @@
+/* Reset default margins and padding */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Main body styling with orange-yellow gradient background */
 body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, rgba(215, 102, 32, 0.8), rgba(250, 206, 49, 0.5));
     font-family: 'Poppins', sans-serif;
-
 }
 
+/* Container for JavaScript input sections - uses flexbox for layout */
 .JS-Input {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     margin: 70px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
 }
 
+/* Individual box container styling */
 .box-frame {
     width: 370px;
     min-height: 500px;
@@ -32,6 +35,7 @@ body{
     align-items: center;
 }
 
+/* Box title styling */
 .box-frame h1 {
     font-size: 1.5rem;
     color: white;
@@ -39,6 +43,7 @@ body{
     text-align: center;
 }
 
+/* Common styling for different box content types */
 .box-ui-content, .box-li-content, .box-content {
     width: 100%;
     display: flex;
@@ -46,11 +51,13 @@ body{
     align-items: center;
 }
 
+/* Shared styles for input fields and buttons within UI content */
 .box-ui-content input, .box-ui-content button {
     width: 80%;
     margin: 5px 0;
 }
 
+/* Input field specific styling */
 .box-ui-content input {
     background-color: lightyellow;
     border: none;
@@ -60,6 +67,7 @@ body{
     font-size: 1rem;
 }
 
+/* Button styling within UI content */
 .box-ui-content button {
     border: none;
     border-radius: 4px;
@@ -70,10 +78,12 @@ body{
     font-size: 1rem;
 }
 
+/* Button hover effect */
 .box-ui-content button:hover {
     background-color: rgba(41, 199, 243, 0.85);
 }
 
+/* Container for grouping buttons */
 .button-container{
     display: flex;
     justify-content: center;

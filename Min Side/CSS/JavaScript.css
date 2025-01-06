@@ -7,7 +7,7 @@
 /* Main body styling with orange-yellow gradient background */
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, rgba(215, 102, 32, 0.8), rgba(250, 206, 49, 0.5));
+    background-image: linear-gradient(135deg, rgb(30, 35, 42) 0%, rgb(30, 35, 42) 40%, rgb(30, 40, 56) 70%, rgb(30, 45, 74) 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,9 +24,9 @@ body{
 .box-frame {
     width: 450px;
     min-height: 500px;
-    border: 2px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom right, rgba(250, 206, 49, 0.5), rgba(215, 102, 32, 0.8));
+    background-color: rgb(46, 52, 59);
     border-radius: 5px;
     padding: 20px;
     margin-top: 50px;
@@ -78,6 +78,10 @@ body{
     font-size: 1rem;
 }
 
+.box-li-content {
+    color: lightyellow;
+}
+
 /* Button hover effect */
 .box-ui-content button:hover {
     background-color: rgba(41, 199, 243, 0.85);
@@ -91,13 +95,14 @@ body{
     width: 80%;
 }
 
-/* Game specific styles */
+/* RPS styles */
 .game-box {
-    background-image: linear-gradient(to bottom right, rgba(250, 206, 49, 0.5), rgba(215, 102, 32, 0.8));
+    background-color: rgb(46, 52, 59);
 }
 
 .game-container {
     max-width: 100%;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;

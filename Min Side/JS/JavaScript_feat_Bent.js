@@ -1,8 +1,9 @@
 /*Java Script med bent*/
 
 
-document.cookie = "username=spyware; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
+/*
+//doxing function
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the IP address from the API
     fetch("https://api.ipify.org?format=json")
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("Error fetching IP address:", error);
         });
 });
-
+*/
 
 //JS underside - Task list
 document.getElementById("addTaskButton").addEventListener("click", addTask);
@@ -66,28 +67,28 @@ function reverseInput() {
 
 
 
-// Rock Paper Scissors Game
-const gameChoices = ["Rock", "Paper", "Scissors"];
+// Stein Paper Scissors Game
+const gameChoices = ["Stein", "Papir", "Scissors"];
 let playerScore = 0;
 let computerScore = 0;
 
 
-//Simulates a round of rock paper scissors and calculates the resulting score 
+//Simulates a round of Stein Papir scissors and calculates the resulting score 
 function playRPS(playerChoice) {
     const computerChoice = gameChoices[Math.floor(Math.random() * 3)];
     let result;
 
     if (playerChoice === computerChoice) {
-        result = "Draw!";
+        result = "Uavgjort!";
     } else if (
-        (playerChoice === "Rock" && computerChoice === "Scissors") ||
-        (playerChoice === "Paper" && computerChoice === "Rock") ||
-        (playerChoice === "Scissors" && computerChoice === "Paper")
+        (playerChoice === "Stein" && computerChoice === "Scissors") ||
+        (playerChoice === "Papir" && computerChoice === "Stein") ||
+        (playerChoice === "Scissors" && computerChoice === "Papir")
     ) {
-        result = "You Win!";
+        result = "Du Vant :D";
         playerScore++;
     } else {
-        result = "Computer Wins!";
+        result = "Robot Vant :(";
         computerScore++;
     }
 
@@ -105,9 +106,9 @@ function updateGameUI(playerChoice, computerChoice, result) {
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
-    updateGameUI('-', '-', 'Choose your move!');
+    updateGameUI('-', '-', 'Velg ditt neste trekk');
 }
-
+document.cookie = "username=spyware; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 
 

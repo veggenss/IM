@@ -29,55 +29,67 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 /* Glassmorphism effect for header box */
 .header-box{
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(8px);
-    border-radius: 5px;   
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.08));
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     position: relative;
     display: flex;
-    width: 700px;
-    height: 100px;
+    width: 800px;
+    height: 120px;
 }
+
+
+
 
 /* Header content alignment and styling */
 .header-content{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Project section layout containers */
 .Prosjekt-Top, .Prosjekt-Bottom{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 70px;
-    margin-top: 40px;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 20px;
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
-/* Individual project box styling with glassmorphism effect */
+/* Individual project box styling */
 .Project-box{
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     border-left: 2px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.058);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(8px);
-    height: 450px;
-    width: 420px;
+    height: 500px;
+    width: 450px;
     border-radius: 15px;
     margin-bottom: 25px;
-    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Project content container styling */
@@ -103,7 +115,7 @@ body{
 }
 
 /* Remove blur effect on hover */
-.Project-content img:hover{
+.Project-content :hover{
     filter: blur(0px);
 }
 
@@ -133,3 +145,94 @@ footer li{
     margin-right: auto;
     text-decoration: underline;
 }
+
+/* Outline section styling */
+.outline-section {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    margin-bottom: 100px; /* Space for footer */
+}
+
+.outline-box {
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(8px);
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.outline-content {
+    color: white;
+    text-align: center;
+}
+
+.outline-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.outline-text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Responsive adjustment */
+@media only screen and (max-width: 920px) {
+    .outline-section {
+        margin: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .outline-box {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 1400px) {
+    .Prosjekt-Top, .Prosjekt-Bottom {
+        flex-wrap: wrap;
+    }
+    
+    .Project-box {
+        width: calc(50% - 40px);
+        min-width: 380px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .header-box {
+        width: 90%;
+        margin: 0 20px;
+    }
+    
+    .header-content {
+        font-size: 1.4rem;
+    }
+    
+    .Project-box {
+        width: 100%;
+        min-width: unset;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .picture img {
+        filter: none;
+        transition: none;
+    }
+    
+    .picture img:hover {
+        filter: none;
+        transform: none;
+    }
+}
+

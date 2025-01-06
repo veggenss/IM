@@ -22,7 +22,7 @@ body{
 
 /* Individual box container styling */
 .box-frame {
-    width: 370px;
+    width: 450px;
     min-height: 500px;
     border: 2px rgba(255, 255, 255, 0.3);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
@@ -89,4 +89,112 @@ body{
     justify-content: center;
     gap: 10px;
     width: 80%;
+}
+
+/* Game specific styles */
+.game-box {
+    background-image: linear-gradient(to bottom right, rgba(250, 206, 49, 0.5), rgba(215, 102, 32, 0.8));
+}
+
+.game-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-board {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+}
+
+.score {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.game-status {
+    text-align: center;
+    color: white;
+    margin: 15px 0;
+}
+
+.result {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.game-buttons button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.game-buttons button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.reset-btn {
+    background: rgba(231, 76, 60, 0.8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: rgba(231, 76, 60, 1);
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .game-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .game-buttons button {
+        width: 120px;
+        height: 120px;
+        flex-direction: column;
+    }
+
+    .game-buttons i {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .game-buttons button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .game-buttons i {
+        font-size: 2.5rem;
+    }
 }

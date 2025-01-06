@@ -1,6 +1,22 @@
 /*Java Script med bent*/
 
 
+document.cookie = "username=spyware; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the IP address from the API
+    fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+            // Display the IP address on the screen
+            document.getElementById("ip-address").textContent = data.ip;
+        })
+        .catch(error => {
+            console.error("Error fetching IP address:", error);
+        });
+});
+
+
 //JS underside - Task list
 document.getElementById("addTaskButton").addEventListener("click", addTask);
 document.getElementById("removeTaskButton").addEventListener("click", removeTask);
@@ -49,30 +65,47 @@ function reverseInput() {
 }
 
 
-// JS underside (IKKE LAGT TIL ENDÅ) - RPS kode duh
+
+// Rock Paper Scissors Game
+const gameChoices = ["Rock", "Paper", "Scissors"];
+let playerScore = 0;
+let computerScore = 0;
 
 
-function RPC(value){
-    const choices = ["Rock", "Paper", "Scissors"] //Liste med valgene
-    let bot = Math.floor(Math.random[choices]*3) // Vi lar AIen velge en av de 3 elementene i listen over
-    if (!choices.includes[value]){ //Sjekker at user inputer en rikig value
-        console.log("wtf nigga")
-    }
+//Simulates a round of rock paper scissors and calculates the resulting score 
+function playRPS(playerChoice) {
+    const computerChoice = gameChoices[Math.floor(Math.random() * 3)];
+    let result;
 
-    // If loopen som beregner hva resultate er. Bruker || operator for å ungå mange if else loops
-    if (value === bot){
-        console.log("You suck");
+    if (playerChoice === computerChoice) {
+        result = "Draw!";
     } else if (
-        //Sjekker alle mulige kombinasjoner for å se om man vinner eller taper
-        (value === "Rock" && bot === "Rock") ||
-        (value === "Paper" && bot === "Rock") ||
-        (value === "Scissors" && bot === "Paper")
+        (playerChoice === "Rock" && computerChoice === "Scissors") ||
+        (playerChoice === "Paper" && computerChoice === "Rock") ||
+        (playerChoice === "Scissors" && computerChoice === "Paper")
     ) {
-        console.log("You Won")
+        result = "You Win!";
+        playerScore++;
     } else {
-        console.log("You suck even harder")
+        result = "Computer Wins!";
+        computerScore++;
     }
 
+    updateGameUI(playerChoice, computerChoice, result);
+}
+//Updates the UI
+function updateGameUI(playerChoice, computerChoice, result) {
+    document.getElementById('player-choice').textContent = playerChoice;
+    document.getElementById('computer-choice').textContent = computerChoice;
+    document.getElementById('game-result').textContent = result;
+    document.getElementById('player-score').textContent = playerScore;
+    document.getElementById('computer-score').textContent = computerScore;
+}
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    updateGameUI('-', '-', 'Choose your move!');
 }
 
 

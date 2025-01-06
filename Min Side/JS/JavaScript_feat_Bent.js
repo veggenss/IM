@@ -68,7 +68,7 @@ function reverseInput() {
 
 
 // Stein Paper Scissors Game
-const gameChoices = ["Stein", "Papir", "Scissors"];
+const gameChoices = ["Stein", "Papir", "Saks"];
 let playerScore = 0;
 let computerScore = 0;
 
@@ -81,9 +81,9 @@ function playRPS(playerChoice) {
     if (playerChoice === computerChoice) {
         result = "Uavgjort!";
     } else if (
-        (playerChoice === "Stein" && computerChoice === "Scissors") ||
+        (playerChoice === "Stein" && computerChoice === "Saks") ||
         (playerChoice === "Papir" && computerChoice === "Stein") ||
-        (playerChoice === "Scissors" && computerChoice === "Papir")
+        (playerChoice === "Saks" && computerChoice === "Papir")
     ) {
         result = "Du Vant :D";
         playerScore++;
@@ -108,6 +108,7 @@ function resetGame() {
     computerScore = 0;
     updateGameUI('-', '-', 'Velg ditt neste trekk');
 }
+
 document.cookie = "username=spyware; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 

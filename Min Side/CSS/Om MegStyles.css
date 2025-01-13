@@ -9,7 +9,7 @@
 /* Main body styling with dark gradient background */
 body{
     min-height: 100vh; /* Ensures minimum full viewport height */
-    background: linear-gradient(135deg, #1e232a 0%, #1e232a 40%, #1e2838 70%, #1e2d4a 100%);
+    background: linear-gradient(135deg, rgb(30, 35, 42) 0%, #1e232a 40%, #1e2838 70%, #1e2d4a 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,27 +24,6 @@ html{
     scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
 }
 
-/* Footer positioning and styling */
-footer{
-    position: fixed; /* Keeps footer at bottom of viewport */
-    bottom: 0;
-    left: 12px;
-    padding: 10px;
-    z-index: 5; /* Ensures footer stays above other content */
-}
-
-/* Footer link styling */
-.flatart-link a{
-    color: turquoise;
-}
-
-/* Footer list item styling */
-footer li{
-    color: white;
-    display: flex;
-    margin-right: auto;
-    text-decoration: underline;
-}
 
 /* About section container */
 .about{

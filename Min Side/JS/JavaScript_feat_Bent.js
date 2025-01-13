@@ -48,7 +48,7 @@ function removeTask(){
         if (listItems[i].textContent === task){
             taskList.removeChild(listItems[i]);
             document.getElementById("taskInput").value = "";
-            return
+            return;
         }
     }
 }
@@ -81,9 +81,7 @@ function playRPS(playerChoice) {
     if (playerChoice === computerChoice) {
         result = "Uavgjort!";
     } else if (
-        (playerChoice === "Stein" && computerChoice === "Saks") ||
-        (playerChoice === "Papir" && computerChoice === "Stein") ||
-        (playerChoice === "Saks" && computerChoice === "Papir")
+        (playerChoice === "Stein" && computerChoice === "Saks") || (playerChoice === "Papir" && computerChoice === "Stein") || (playerChoice === "Saks" && computerChoice === "Papir")
     ) {
         result = "Du Vant :D";
         playerScore++;

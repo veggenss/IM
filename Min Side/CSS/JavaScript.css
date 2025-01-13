@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 /* Main body styling with orange-yellow gradient background */
 body{
     min-height: 100vh;
@@ -11,14 +12,15 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Container for JavaScript input sections - uses flexbox for layout */
 .JS-Input {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 70px;
     flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
 }
+
 
 /* Individual box container styling */
 .box-frame {
@@ -35,6 +37,7 @@ body{
     align-items: center;
 }
 
+
 /* Box title styling */
 .box-frame h1 {
     font-size: 1.5rem;
@@ -42,6 +45,7 @@ body{
     margin-bottom: 20px;
     text-align: center;
 }
+
 
 /* Common styling for different box content types */
 .box-ui-content, .box-li-content, .box-content {
@@ -51,11 +55,13 @@ body{
     align-items: center;
 }
 
+
 /* Shared styles for input fields and buttons within UI content */
 .box-ui-content input, .box-ui-content button {
     width: 80%;
     margin: 5px 0;
 }
+
 
 /* Input field specific styling */
 .box-ui-content input {
@@ -64,8 +70,9 @@ body{
     border-radius: 4px;
     height: 40px;
     padding: 4px;
-    font-size: 1rem;
+    font-size: 1rem;    
 }
+
 
 /* Button styling within UI content */
 .box-ui-content button {
@@ -78,14 +85,18 @@ body{
     font-size: 1rem;
 }
 
+
 .box-li-content {
     color: lightyellow;
 }
+
 
 /* Button hover effect */
 .box-ui-content button:hover {
     background-color: rgba(41, 199, 243, 0.85);
 }
+
+
 
 /* Container for grouping buttons */
 .button-container{
@@ -95,6 +106,10 @@ body{
     width: 80%;
 }
 
+
+
+
+
 /* RPS styles */
 .game-box {
     background-color: rgb(46, 52, 59);
@@ -102,12 +117,16 @@ body{
 
 .game-container {
     max-width: 100%;
-    min-height: 300px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
+
+
+
+
 
 .score-board {
     background: rgba(255, 255, 255, 0.1);
@@ -135,6 +154,11 @@ body{
     margin-top: 10px;
 }
 
+
+
+
+
+
 .game-buttons {
     display: flex;
     flex-direction: column;
@@ -159,7 +183,16 @@ body{
 
 .game-buttons button:hover {
     background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
 }
+
+.game-buttons button:active {
+    transform: translateY(-5px);
+}
+
+
+
+
 
 .reset-btn {
     background: rgba(231, 76, 60, 0.8);
@@ -172,8 +205,16 @@ body{
 }
 
 .reset-btn:hover {
+    transform: translateY(-5px);
     background: rgba(231, 76, 60, 1);
 }
+
+.reset-btn:active {
+    transform: translateY(5px);
+}
+
+
+
 
 /* Responsive styles */
 @media screen and (min-width: 768px) {

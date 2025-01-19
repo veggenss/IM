@@ -8,11 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+
     <header>
         <h1>Avfallshåndtering</h1>
         <p>Hold oversikt over ditt daglige avfall og test kunnskapen din!</p>
     </header>
-
+    
     <main>
         <!-- Interactive Table -->
         <section id="table-section">
@@ -54,10 +55,15 @@
             <h2>Sorteringsquiz</h2>
             <p>Hvor skal disse tingene sorteres?</p>
             <div id="quiz-container">
+                <p id="question-counter">Spørsmål 1 av 8</p>
                 <p id="question"></p>
                 <button class="quiz-btn" data-answer="Restavfall">Restavfall</button>
                 <button class="quiz-btn" data-answer="Papir">Papir</button>
                 <button class="quiz-btn" data-answer="Plast">Plast</button>
+                <button class="quiz-btn" data-answer="Glass">Glass</button>
+                <button class="quiz-btn" data-answer="Farlig Avfall">Farlig Avfall</button>
+                <button class="quiz-btn" data-answer="Metal">Metal</button>
+                <button class="quiz-btn" data-answer="Elektrisk avfall">Elektrisk Avfall</button>
                 <p id="quiz-feedback"></p>
             </div>
         </section>

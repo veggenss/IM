@@ -2,7 +2,7 @@
 
 
 
-/*
+
 //doxing function
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the IP address from the API
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("Error fetching IP address:", error);
         });
 });
-*/
+
 
 //JS underside - Task list
 document.getElementById("addTaskButton").addEventListener("click", addTask);

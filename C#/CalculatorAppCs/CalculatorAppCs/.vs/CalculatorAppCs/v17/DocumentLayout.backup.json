@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vegge\\OneDrive - Vestland fylkeskommune\\Documents\\vg1\\24\\IT\\IM\\IM\\IM\\C#\\CalculatorAppCs\\CalculatorAppCs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA5F417-251C-44BC-AB90-37FF3B68CF10}|CalculatorAppCs.csproj|c:\\users\\vegge\\onedrive - vestland fylkeskommune\\documents\\vg1\\24\\it\\im\\im\\im\\c#\\calculatorappcs\\calculatorappcs\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA5F417-251C-44BC-AB90-37FF3B68CF10}|CalculatorAppCs.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA5F417-251C-44BC-AB90-37FF3B68CF10}|CalculatorAppCs.csproj|c:\\users\\vegge\\onedrive - vestland fylkeskommune\\documents\\vg1\\24\\it\\im\\im\\im\\c#\\calculatorappcs\\calculatorappcs\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2DA5F417-251C-44BC-AB90-37FF3B68CF10}|CalculatorAppCs.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vegge\\OneDrive - Vestland fylkeskommune\\Documents\\vg1\\24\\IT\\IM\\IM\\IM\\C#\\CalculatorAppCs\\CalculatorAppCs\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\vegge\\OneDrive - Vestland fylkeskommune\\Documents\\vg1\\24\\IT\\IM\\IM\\IM\\C#\\CalculatorAppCs\\CalculatorAppCs\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-08T09:00:18.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vegge\\OneDrive - Vestland fylkeskommune\\Documents\\vg1\\24\\IT\\IM\\IM\\IM\\C#\\CalculatorAppCs\\CalculatorAppCs\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vegge\\OneDrive - Vestland fylkeskommune\\Documents\\vg1\\24\\IT\\IM\\IM\\IM\\C#\\CalculatorAppCs\\CalculatorAppCs\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T09:00:11.984Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

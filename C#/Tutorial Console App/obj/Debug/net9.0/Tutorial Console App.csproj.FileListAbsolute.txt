@@ -1,0 +1,15 @@
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\bin\Debug\net9.0\Tutorial Console App.exe
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\bin\Debug\net9.0\Tutorial Console App.deps.json
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\bin\Debug\net9.0\Tutorial Console App.runtimeconfig.json
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\bin\Debug\net9.0\Tutorial Console App.dll
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\bin\Debug\net9.0\Tutorial Console App.pdb
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.AssemblyInfoInputs.cache
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.AssemblyInfo.cs
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.csproj.CoreCompileInputs.cache
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.sourcelink.json
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.dll
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\refint\Tutorial Console App.dll
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.pdb
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\Tutorial Console App.genruntimeconfig.cache
+C:\Users\vegge\OneDrive - Vestland fylkeskommune\Documents\vg1\24\IT\IM\IM\IM\C#\Tutorial Console App\obj\Debug\net9.0\ref\Tutorial Console App.dll

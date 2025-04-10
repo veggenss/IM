@@ -8,5 +8,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veggenss/IM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/veggenss/IM/issues"
+  },
+  "homepage": "https://github.com/veggenss/IM#readme",
   "description": ""
 }
